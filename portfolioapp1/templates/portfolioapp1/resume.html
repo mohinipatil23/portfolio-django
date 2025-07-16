@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'resume' %}">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- Resume -->
+  <main class="resume">
+
+    <!-- Header with photo -->
+    <section class="resume-header">
+      <img src="{% static 'images/PHOTO.jpg' %}" alt="Profile Photo">
+      <div>
+        <h1>Mohini Haribhau Halwane</h1>
+        <p>Computer Science Postgraduate & Ex-IT Trainer</p>
+        <p>Akola, Maharashtra — mohinipatil2303@gmail.com — +91 77449 43700</p>
+        <p>
+          <a href="http://www.linkedin.com/in/mohini-halwane23" target="_blank">LinkedIn</a> |
+          <a href="https://github.com/mohinipatil23" target="_blank">GitHub</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="resume-section">
+      <h2>About Me</h2>
+      <p>I am a Computer Science postgraduate with over 6 years of teaching experience, transitioning into the tech industry as a Python Developer ready to deliver practical, real-world solutions.</p>
+    </section>
+
+    <!-- Education -->
+    <section class="resume-section">
+      <h2>Academic Qualifications</h2>
+      <ul>
+        <li><strong>M.Sc. (Computer Science)</strong> — Shri R.L.T. College of Science, Akola (Pursuing, SGPA: 8.9)</li>
+        <li><strong>BCA</strong> — Completed in 2018, CGPA: 63.14%</li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section class="resume-section">
+      <h2>Work Experience</h2>
+      <ul>
+        <li>Vedant Computer Institute — Self-Employed IT Trainer (June 2024 – March 2025)</li>
+        <li>Shankarlal Khandelwal College — Trainer (June 2024 – Dec 2024)</li>
+        <li>The Professional Institute — IT Trainer (June 2023 – May 2024)</li>
+        <li>Kampabhai Vocational Training Institute — IT Trainer (May 2022 – May 2023)</li>
+        <li>The Professional Institute — IT Trainer (March 2020 – April 2022)</li>
+        <li>Rooman Technologies — IT Trainer (April 2019 – Feb 2020)</li>
+        <li>Bal Shivaji School — Computer Teacher (Oct 2018 – March 2019)</li>
+        <li>Madhu Infotech — C & C++ Trainer (July 2018 – Sept 2018)</li>
+      </ul>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="resume-section">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Programming: Python, C++, Java, C</li>
+        <li>Web: HTML, CSS, JavaScript</li>
+        <li>Tools: Git, GitHub, VS Code, MS Office, Advanced Excel, Tally, DTP, Graphics</li>
+        <li>AI Tools: ChatGPT, GitHub Copilot, Google Colab, Canva, Notion AI</li>
+      </ul>
+    </section>
+
+    <!-- Achievements -->
+    <section class="resume-section">
+      <h2>Achievements</h2>
+      <ul>
+        <li>1st Prize — Seminar Competition (PG Category) on National Science Day 2025</li>
+        <li>Participated in University-level COMPEX Competitions (2016 & 2017)</li>
+      </ul>
+    </section>
+
+    <!-- Soft Skills & Languages -->
+    <section class="resume-section">
+      <h2>Soft Skills & Languages</h2>
+      <ul>
+        <li>Languages: English, Marathi, Hindi</li>
+        <li>Soft Skills: Quick Learner, Hardworking, Disciplined, Sincere, Good Communication</li>
+      </ul>
+    </section>
+
+    <!-- Certifications Carousel -->
+    <section class="resume-section">
+      <h2>Professional Certifications</h2>
+      <div class="certifications-scroll">
+        <img src="{% static 'images/Certificate.jpg' %}" alt="Certificate 1">
+        <img src="{% static 'images/Core Java Certificate.jpg' %}" alt="Certificate 2">
+        <img src="{% static 'images/CPP Certificate.jpg' %}" alt="Certificate 3">
+        <img src="{% static 'images/PHP certificate.jpg' %}" alt="Certificate 4">
+        <img src="{% static 'images/PHP Workshop Certificate.jpg' %}" alt="Certificate 5">
+        <img src="{% static 'images/University Competition Certificate.jpg' %}" alt="Certificate 6">
+      </div>
+    </section>
+
+    <!-- Experience Certificates Carousel -->
+    <section class="resume-section">
+      <h2>Experience Certificates</h2>
+      <div class="certifications-scroll">
+        <img src="{% static 'images/img1.jpeg' %}" alt="Experience Certificate 1">
+        <img src="{% static 'images/img2.jpg' %}" alt="Experience Certificate 2">
+        <img src="{% static 'images/img3.jpg' %}" alt="Experience Certificate 3">
+        <img src="{% static 'images/img4.jpeg' %}" alt="Experience Certificate 1">
+        <img src="{% static 'images/img5.jpg' %}" alt="Experience Certificate 2">
+        <img src="{% static 'images/img7.jpeg' %}" alt="Experience Certificate 3">
+        <img src="{% static 'images/img8.jpeg' %}" alt="Experience Certificate 3">
+        <!-- Add more experience certificate images here -->
+      </div>
+    </section>
+
+
+  </main>
+
+</body>
+</html>

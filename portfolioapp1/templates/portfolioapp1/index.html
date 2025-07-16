@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Homepage</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'resume' %}">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <main class="hero">
+    <div class="hero-text">
+      <h1>Hello,</h1>
+      <h2>I’m Mohini Halwane</h2>
+      <p>Computer Science Student, Aspiring Developer & Ex-IT Trainer</p>
+      <br><br>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn primary">Contact Me</a>
+        <a href="{% static 'docs/Mohini_Halwane_Python_Developer.pdf' %}" class="btn secondary" download>Download Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <img src="{% static 'images/PHOTO.jpg' %}" alt="Mohini's Photo">
+    </div>
+  </main>
+<br><br><br><br>
+  <!-- ✅ Contact Section OUTSIDE the flex hero -->
+  <section id="contact" class="resume-section">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:mohinipatil2303@gmail.com">mohinipatil2303@gmail.com</a></p>
+    <p>Phone: +91 77449 43700</p>
+    <p>LinkedIn: <a href="http://www.linkedin.com/in/mohini-halwane23" target="_blank">Mohini Halwane</a></p>
+  </section>
+
+</body>
+</html>

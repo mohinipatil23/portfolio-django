@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  font-size: 20px;
+  margin-right: 30px;
+  justify-content: flex-end;  /*  puts Home & Resume on the RIGHT */
+  align-items: center;
+  padding: 20px 40px;
+  background: #512424;
+ 
+}
+
+
+/* .navbar .brand {
+  font-size: 24px;
+  font-weight: bold;
+} */
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 40px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+}
+
+.hero-text h2 {
+  font-size: 40px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: 2px solid #e74c3c;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.btn.primary {
+  background: #e74c3c;
+}
+
+.btn.secondary {
+  background: transparent;
+}
+
+.hero-photo img {
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+
+/* Resume container */
+/* Main resume container */
+.resume {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Header with photo layout */
+.resume-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 2px solid #e74c3c;
+  padding-bottom: 20px;
+}
+
+.resume-header img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #e74c3c;
+}
+
+.resume-section {
+  margin: 30px 0;
+}
+
+.resume-section h2 {
+  font-size: 22px;
+  border-left: 4px solid #e74c3c;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.resume-section p,
+.resume-section li {
+  line-height: 1.6;
+}
+
+.resume-section ul {
+  padding-left: 20px;
+}
+
+.resume-section a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.resume-section a:hover {
+  text-decoration: underline;
+}
+
+/* Scrollable image row (for certs and experience certs) */
+.certifications-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.certifications-scroll img {
+  height: 200px;
+  border-radius: 8px;
+  border: 2px solid #444;
+  flex-shrink: 0;
+}
+#contact {
+  margin-top: 100px;  /* Adds space above the Contact section */
+}
+
+html {
+  scroll-behavior: smooth;
+}

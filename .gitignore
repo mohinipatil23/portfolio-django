@@ -1,0 +1,21 @@
+# 🐍 Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 🗂️ Virtual environment
+newvenv/
+
+# 🔗 Local database
+*.sqlite3
+
+# ⚙️ VSCode & IDE folders (optional but good practice)
+.vscode/
+.idea/
+
+# 🔐 Environment variables (if you ever use)
+.env
+
+# 🗑️ Logs
+*.log
